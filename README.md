@@ -1,0 +1,1 @@
+[figma link](https://www.figma.com/file/x6nKrjXvLTkJl5wBlxrIDi/Agro-Cap-Project?type=design&node-id=140-157&mode=design&t=jSHEo0HASYcoItrn-0)
