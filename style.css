@@ -28,7 +28,7 @@ body {
 }
 
 :root {
-	--primary-color: #8ac50d;
+	--primary-color: #4ab848;
 	--main-bg: #f6fef6;
 }
 .container {
@@ -46,13 +46,10 @@ a {
 	display: inline-block;
 }
 .btn-primary {
-	background: #000;
+	background: var(--primary-color);
 	border: solid 2px transparent;
 	color: var(--main-bg);
 	transition: all 0.3s ease;
-}
-.btn-primary:hover {
-	background: rgb(89, 89, 89);
 }
 
 .btn-secondary {
@@ -61,7 +58,7 @@ a {
 	transition: all 0.3s ease;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,.btn-primary:hover {
 	background: #000;
 	color: var(--main-bg);
 }
@@ -130,14 +127,9 @@ header .l-heading {
 }
 
 .hero .imgContent .btn, #about .btn {
-	background: var(--primary-color);
 	padding: 1rem 5rem;
 	border-radius: 10px;
 	font-weight: 800;
-}
-
-.hero .imgContent .btn:hover,  #about .btn:hover {
-	background-color: rgb(80, 115, 6);
 }
 
 #rate {
@@ -241,15 +233,10 @@ header .l-heading {
 }
 
 #buy .btn {
-	background: var(--primary-color);
 	padding:2rem 7rem;
 	border-radius: 10px;
 	font-weight: 800;
 	font-size: 2.5rem;
-}
-
-#buy .btn:hover {
-	background-color: rgb(80, 115, 6);
 }
 
 /* How to */
