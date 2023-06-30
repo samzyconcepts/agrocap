@@ -8,7 +8,7 @@ html{
 }
 @font-face {
 	font-family: 'NeueMachina';
-	src: url(assets/fonts/NeueMachina-Light.otf) format('opentype');
+	src: url(./assets/fonts/NeueMachina-Light.otf) format('opentype');
 	font-weight: light;
 }
 @font-face {
@@ -18,7 +18,7 @@ html{
 }
 @font-face {
 	font-family: 'NeueMachina';
-	src: url(assets/fonts/NeueMachina-Ultrabold.otf) format('opentype');
+	src: url(./assets/fonts/NeueMachina-Ultrabold.otf) format('opentype');
 	font-weight: bold;
 }
 
@@ -68,154 +68,15 @@ a {
 	font-size: 9.375rem;
 }
 
-#header {
-	background: url(/assets/image/pattern-bg.svg);
-	position: relative;
-}
 
-nav .container {
-	padding: 2rem 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 
-.navMenu {
-	display: flex;
-	width: 70%;
-	justify-content: space-between;
-	align-items: center;
-}
 
-nav ul {
-	list-style: none;
-	display: flex;
-	gap: 24px;
-}
 
-/* heading */
-header .l-heading {
-	position: relative;
-	font-size: 17rem;
-	line-height: 1;
-	z-index: 100;
-}
-.hero{
-	padding-bottom: 7rem;
-}
-.hero .content {
-	font-size: 1.5rem;
-	display: flex;
-	justify-content: space-between;
-}
 
-.hero .content p {
-	width: 400px;
-	line-height: 1.5;
-}
-
-.hero .center {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.hero .imgContent h3, #about h3 {
-	line-height: 3;
-}
-
-.hero .imgContent .btn, #about .btn {
-	padding: 1rem 5rem;
-	border-radius: 10px;
-	font-weight: 800;
-}
-
-#rate {
-	background: url(./assets/image/pattern-bg.svg);
-}
-
-#rate .container {
-	padding: 2.9375rem 6.875rem;
-	background-color: var(--main-bg);
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-#rate .container h1 {
-	font-size: 5rem;
-}
-#rate .container p {
-	font-size: 1.5rem;
-}
-
-#about {
-	background: url(./assets/image/pattern-bg.svg);
-}
-
-#about .container {
-	padding: 5rem 0;
-	position: relative;
-	display: flex;
-	gap: 50px;
-}
-
-#about .l-heading {
-	position: absolute;
-	width: 750px;
-}
-
-#about .container > div{
-	margin-top: 10rem;
-}
-
-#about .container p{
-	line-height: 1.5;
-	padding-top: 3rem;
-}
-
-#about .cta{
-	text-align: right !important;
-}
-
-/* benefit */
-#benefit{
-	background: url(./assets/image/pattern-bg.svg);
-	position: relative;
-}
-
-#benefit .container .content{
-	display: flex;
-}
-
-#benefit .l-heading{
-	position: relative;
-	z-index: 200;
-}
-#benefit .benefits{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
-#benefit .benefits p{
-	width: 500px;
-	padding: 2rem 0;
-}
-
-#benefit .benefits p:nth-child(even){
-	align-self: flex-end;
-}
-
-#benefit .container .content img{
-	transform: translateY(-250px);
-}
 
 /* buy */
 #buy{
-	background: url(./assets/image/ctaImg.png) no-repeat center;
+	background: url(../assets/image/ctaImg.png) no-repeat center;
 	background-size: cover;
 	height: 62.5rem;
 	width: 100%;

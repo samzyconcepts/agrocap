@@ -1,0 +1,31 @@
+/* benefit */
+#benefit{
+	background: url(../../assets/image/pattern-bg.svg);
+	position: relative;
+}
+
+#benefit .container .content{
+	display: flex;
+}
+
+#benefit .l-heading{
+	position: relative;
+	z-index: 200;
+}
+#benefit .benefits{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+#benefit .benefits p{
+	width: 500px;
+	padding: 2rem 0;
+}
+
+#benefit .benefits p:nth-child(even){
+	align-self: flex-end;
+}
+
+#benefit .container .content img{
+	transform: translateY(-250px);
+}

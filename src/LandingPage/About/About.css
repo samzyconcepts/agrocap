@@ -1,0 +1,28 @@
+#about {
+	background: url(../../assets/image/pattern-bg.svg);
+}
+
+#about .container {
+	padding: 5rem 0;
+	position: relative;
+	display: flex;
+	gap: 50px;
+}
+
+#about .l-heading {
+	position: absolute;
+	width: 750px;
+}
+
+#about .container > div{
+	margin-top: 10rem;
+}
+
+#about .container p{
+	line-height: 1.5;
+	padding-top: 3rem;
+}
+
+#about .cta{
+	text-align: right !important;
+}

@@ -1,0 +1,38 @@
+/* heading */
+.hero{
+    padding-bottom: 7rem;
+}
+.hero .l-heading {
+    position: relative;
+    font-size: 17rem;
+    line-height: 1;
+    z-index: 100;
+}
+.hero .content {
+    font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero .content p {
+	width: 400px;
+	line-height: 1.5;
+}
+
+.hero .center {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.hero .imgContent h3, #about h3 {
+	line-height: 3;
+}
+
+.hero .imgContent .btn, #about .btn {
+	padding: 1rem 5rem;
+	border-radius: 10px;
+	font-weight: 800;
+}

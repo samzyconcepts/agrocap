@@ -1,0 +1,19 @@
+#rate {
+	background: url(../../assets/image/pattern-bg.svg);
+}
+
+#rate .container {
+	padding: 2.9375rem 6.875rem;
+	background-color: var(--main-bg);
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#rate .container h1 {
+	font-size: 5rem;
+}
+#rate .container p {
+	font-size: 1.5rem;
+}

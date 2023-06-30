@@ -1,0 +1,23 @@
+nav .container {
+	padding: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav #logo img{
+	width: 160px;
+}
+
+.navMenu {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 24px;
+}
