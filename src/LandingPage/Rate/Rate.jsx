@@ -1,4 +1,4 @@
-import './Rate.css'
+import "./Rate.css";
 
 const Rate = () => {
     return (

@@ -1,3 +1,4 @@
+import benefit from "../../assets/image/buyingImg.png"
 import "./Benefit.css";
 
 const Benefit = () => {
@@ -31,7 +32,7 @@ const Benefit = () => {
                         </p>
                     </div>
                     <img
-                        src="../../assets/image/buyingImg.png"
+                        src={benefit}
                         alt="agroimage"
                     />
                 </div>

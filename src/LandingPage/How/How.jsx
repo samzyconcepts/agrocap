@@ -31,7 +31,7 @@ const How = () => {
                         <p>
                             Enter the number of AGCTs you would like to obtain.
                             <br />
-                            Note: 1AGCT&equals;1BUSD
+                            Note: 1AGCT&#61;1BUSD
                         </p>
                     </div>
                 </div>

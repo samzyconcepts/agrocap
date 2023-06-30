@@ -1,3 +1,4 @@
+import HeroImg from "../../../assets/image/heroImg.png";
 import "./Hero.css";
 
 const Hero = () => {
@@ -23,12 +24,12 @@ const Hero = () => {
 					<div className="center">
 						<div className="image">
 							<img
-								src="/assets/image/heroImg.png"
+								src={HeroImg}
 								alt="agricultural product"
 							/>
 						</div>
 						<div className="imgContent">
-							<h3>[1 BUSD &equals; 1 AGCT]</h3>
+							<h3>[1 BUSD &#61; 1 AGCT]</h3>
 							<a href="#signUp" className="btn btn-primary">Buy Token</a>
 						</div>
 					</div>

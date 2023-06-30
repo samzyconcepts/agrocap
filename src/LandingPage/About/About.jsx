@@ -1,5 +1,4 @@
-import React from "react";
-
+import about from "../../assets/image/aboutImg.png"
 import "./About.css"
 const About = () => {
     return (
@@ -7,7 +6,7 @@ const About = () => {
             <div className="container">
                 <h1 className="l-heading">About AGCT</h1>
                 <div>
-                    <img src="../../assets/image/aboutImg.png" alt="" />
+                    <img src={about} alt="about" />
                 </div>
                 <div className="content">
                     <p>
@@ -44,7 +43,7 @@ const About = () => {
                         returns on their digital assets.
                     </p>
                     <div className="cta">
-                        <h3>[1 BUSD &equals; 1 AGCT]</h3>
+                        <h3>[1 BUSD &#61; 1 AGCT]</h3>
                         <a href="#buy" className="btn btn-primary">
                             Buy Token
                         </a>
