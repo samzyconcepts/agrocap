@@ -1,4 +1,4 @@
-import about from "../../assets/image/aboutImg.png"
+import about from "../../../assets/image/aboutImg.png"
 import "./About.css"
 const About = () => {
     return (

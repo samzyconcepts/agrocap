@@ -1,11 +1,11 @@
 /* How to */
 #howto{
-	background: url(../../assets/image/pattern-bg.svg);
+	background: url(../../../assets/image/pattern-bg.svg);
 	padding:  2rem 0;
 }
 #howto .l-heading span.howtobg{
 	display: inline-block;
-	background: url(../../assets/image/farm.png) center/cover;
+	background: url(../../../assets/image/farm.png) center/cover;
 	height: 100px;
 	width: 410px;
 	border-radius: 0 2rem;

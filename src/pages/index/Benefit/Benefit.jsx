@@ -1,4 +1,4 @@
-import benefit from "../../assets/image/buyingImg.png"
+import benefit from "../../../assets/image/buyingImg.png"
 import "./Benefit.css";
 
 const Benefit = () => {

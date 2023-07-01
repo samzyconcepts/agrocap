@@ -1,4 +1,4 @@
-import logo from "../../../assets/image/logo-black.png";
+import logo from "../../../../assets/image/logo-black.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-                    <div>
+                    <div className="registerBtn">
                         <a href="#signIn" className="btn btn-secondary">
                             Sign In
                         </a>
