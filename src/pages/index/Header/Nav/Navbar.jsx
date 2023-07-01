@@ -1,17 +1,21 @@
+import { Link } from "react-router-dom";
+
 import logo from "../../../../assets/image/logo-black.png";
+
+// Navbar CSS
 import "./Navbar.css";
 
 const Navbar = () => {
     return (
         <nav>
             <div className="container">
-                <a id="logo" href="#index">
+                <Link id="logo" to="/">
                     <img src={logo} alt="AgroCap logo" />
-                </a>
+                </Link>
                 <div className="navMenu">
                     <ul>
                         <li>
-                            <a href="#index">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
                             <a href="#about">About Us</a>
@@ -22,12 +26,12 @@ const Navbar = () => {
                     </ul>
 
                     <div className="registerBtn">
-                        <a href="#signIn" className="btn btn-secondary">
+                        <Link to="/form" className="btn btn-secondary">
                             Sign In
-                        </a>
-                        <a href="#signIn" className="btn btn-primary">
+                        </Link>
+                        <Link to="/form" className="btn btn-primary">
                             Join now
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
