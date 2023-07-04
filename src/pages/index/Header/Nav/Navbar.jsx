@@ -26,10 +26,10 @@ const Navbar = () => {
                     </ul>
 
                     <div className="registerBtn">
-                        <Link to="/form" className="btn btn-secondary">
+                        <Link to="/login" className="btn btn-secondary">
                             Sign In
                         </Link>
-                        <Link to="/form" className="btn btn-primary">
+                        <Link to="/register" className="btn btn-primary">
                             Join now
                         </Link>
                     </div>

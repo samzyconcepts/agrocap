@@ -31,6 +31,7 @@ body {
 :root {
 	--primary-color: #4ab848;
 	--main-bg: #f6fef6;
+	--black: #111023;
 }
 .container {
 	max-width: 1280px;
@@ -67,4 +68,61 @@ a {
 .l-heading {
 	font-weight: 400;
 	font-size: 9.375rem;
+}
+
+/* Login Form */
+
+.form {
+    background: url(./assets/image/pattern-bg.svg);
+    height: 100vh;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form .container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.form .logo {
+    width: 10rem;
+    display: block;
+    margin: 0 auto 1.5rem;
+    padding-top: 2.25rem;
+}
+
+.form .l-heading {
+    font-size: 2.1875rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.form .sub-heading{
+    color: #a59696;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.form .btn {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+form {
+    padding: 24px;
+    background: rgba(246, 254, 246, 0.63);
+    width: 580px;
+}
+
+form .head{
+    margin-bottom: 2rem;
+}
+
+form .inputField:not(:first-child){
+    margin-top: 24px;
 }

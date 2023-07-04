@@ -1,0 +1,15 @@
+#login a{
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+#login .signup-btn{
+    margin-top: 1rem;
+}
+#login .forget{
+    color: #a59696;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
