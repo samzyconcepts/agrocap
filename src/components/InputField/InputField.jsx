@@ -1,11 +1,18 @@
-import React from "react";
-import './InputField.css'
+import "./InputField.css";
 
-const InputField = ({ name, type, placeholder, label }) => {
+const InputField = (props) => {
     return (
         <div className="inputField">
-            <label htmlFor={name}>{label}</label>
-            <input type={type} name={name} id={name} placeholder={placeholder} />
+            <label htmlFor={props.name}>{props.label}</label>
+            <input
+                type={props.type}
+                name={props.name}
+                id={props.name}
+                placeholder={props.placeholder}
+                value={props.value}
+                onChange={props.handleChange}
+                disabled={props.disabled === true ? true : false}
+            />
         </div>
     );
 };

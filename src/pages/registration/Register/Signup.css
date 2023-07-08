@@ -1,13 +1,13 @@
-#signup a{
+#signup a {
     cursor: pointer;
     color: var(--primary-color);
     font-weight: 800;
 }
 
-#signup .login-btn{
+#signup .login-btn {
     margin-top: 8px;
 }
-#signup .checkbox{
+#signup .checkbox {
     cursor: pointer;
     margin-top: 0.25rem;
     font-size: 0.875rem;

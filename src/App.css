@@ -1,73 +1,87 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html{
-	scroll-behavior: smooth;
-	overflow-x: hidden;
-}
-@font-face {
-	font-family: 'NeueMachina';
-	src: url(./assets/fonts/NeueMachina-Light.otf) format('opentype');
-	font-weight: light;
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 @font-face {
-	font-family: 'NeueMachina';
-	src: url(./assets/fonts/NeueMachina-Regular.otf) format('opentype');
-	font-weight: normal;
+    font-family: "NeueMachina";
+    src: url(./assets/fonts/NeueMachina-Light.otf) format("opentype");
+    font-weight: light;
 }
 @font-face {
-	font-family: 'NeueMachina';
-	src: url(./assets/fonts/NeueMachina-Ultrabold.otf) format('opentype');
-	font-weight: bold;
+    font-family: "NeueMachina";
+    src: url(./assets/fonts/NeueMachina-Regular.otf) format("opentype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "NeueMachina";
+    src: url(./assets/fonts/NeueMachina-Ultrabold.otf) format("opentype");
+    font-weight: bold;
 }
 
 body {
-	font-family: 'NeueMachina';
-	background-color: var(--main-bg);
+    font-family: "NeueMachina";
+    background-color: var(--main-bg);
 }
 
 :root {
-	--primary-color: #4ab848;
-	--main-bg: #f6fef6;
-	--black: #111023;
+    --primary-color: #4ab848;
+    --main-bg: #f6fef6;
+    --black: #111023;
 }
 .container {
-	max-width: 1280px;
-	margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 a {
-	text-decoration: none !important ;
-	color: #000;
+    text-decoration: none !important ;
+    color: #000;
 }
 
 .btn {
-	padding: 0.75rem 1.75rem;
-	display: inline-block;
+    padding: 0.75rem 1.75rem;
+    display: inline-block;
 }
 .btn-primary {
-	background: var(--primary-color);
-	border: solid 2px transparent;
-	color: var(--main-bg);
-	transition: all 0.3s ease;
+    background: var(--primary-color);
+    border: solid 2px transparent;
+    color: var(--main-bg) !important;
+	text-align: center;
+    transition: all 0.3s ease;
 }
 
 .btn-secondary {
-	background: transparent;
-	border: solid 2px #000;
-	transition: all 0.3s ease;
+    background: transparent;
+    border: solid 2px #000;
+    transition: all 0.3s ease;
 }
 
-.btn-secondary:hover,.btn-primary:hover {
-	background: #000;
-	color: var(--main-bg);
+.btn-secondary:hover,
+.btn-primary:hover {
+    background: #000;
+    color: var(--main-bg);
+}
+
+.btn-tertiary {
+    background: transparent;
+    border: solid 2px var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-tertiary:hover {
+    color: var(--main-bg);
+    background-color: var(--primary-color);
 }
 
 .l-heading {
-	font-weight: 400;
-	font-size: 9.375rem;
+    font-weight: 400;
+    font-size: 9.375rem;
 }
 
 /* Login Form */
@@ -99,7 +113,7 @@ a {
     line-height: 1.5;
 }
 
-.form .sub-heading{
+.form .sub-heading {
     color: #a59696;
     text-align: center;
     font-size: 0.875rem;
@@ -119,10 +133,10 @@ form {
     width: 580px;
 }
 
-form .head{
+form .head {
     margin-bottom: 2rem;
 }
 
-form .inputField:not(:first-child){
+form .inputField:not(:first-child) {
     margin-top: 24px;
 }

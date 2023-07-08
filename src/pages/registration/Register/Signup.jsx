@@ -1,68 +1,71 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import FormImg from "../../../components/FormImg/FormImg";
-import InputField from "../../../components/InputField/InputField";
-
-import logo from "../../../assets/image/logo-black.png";
+import FormUserDetails from "./FormUserDetails";
+import LinkWallet from "./LinkWallet";
 import "./Signup.css";
+import Success from "./Success";
 
 const Signup = () => {
+    const [step, setStep] = useState(1);
+    const [details, setDetails] = useState({
+        email: "",
+        password: "",
+        confirmPassword: "",
+        referrerCode: "",
+        linkAddress: "",
+    });
+
+    const { email, password, confirmPassword, referrerCode, linkAddress } =
+        details;
+
+    const values = {
+        email,
+        password,
+        confirmPassword,
+        referrerCode,
+        linkAddress,
+    };
+
+    // Proceed to next step
+    const handleStep = () => {
+        setStep((step) => step + 1);
+        console.log(details);
+    };
+
+    // Handle changes in input and save them in the state
+    const handleChange = (input) => (e) => {
+        setDetails({ ...details, [input]: e.target.value });
+    };
+
     return (
         <section className="form">
             <div className="container">
                 <FormImg />
-                <form id="signup">
-                    <div className="head">
-                        <img src={logo} className="logo" alt="AgroCap logo" />
-                        <h1 className="l-heading">Welcome to AgroCap</h1>
-                        <p className="sub-heading">
-                            Sign up by entering information below
-                        </p>
-                    </div>
 
-                    <InputField
-                        label="Email Address"
-                        placeholder="email@gmail.com"
-                        name="email"
-                        type="email"
-                    />
-                    <InputField
-                        label="Password"
-                        placeholder="***************"
-                        name="password"
-                        type="password"
-                    />
-                    <InputField
-                        label="Confirm Password"
-                        placeholder="***************"
-                        name="confirmpassword"
-                        type="password"
-                    />
-                    <InputField
-                        label="Referer Code"
-                        placeholder="AG67577899543222256"
-                        name="text"
-                        type="text"
-                    />
-
-                    <div className="checkbox">
-                        <input type="checkbox" name="agree" id="agree" />
-                        <label htmlFor="agree">
-                            I agree to the <span>Terms and Conditions</span>
-                        </label>
-                    </div>
-
-                    <input
-                        type="submit"
-                        className="btn btn-primary"
-                        value="Create an Account"
-                    />
-
-                    <p className="sub-heading login-btn">
-                        Already have an account?
-                        <Link to="/login"> Login</Link>
-                    </p>
-                </form>
+                {(() => {
+                    switch (step) {
+                        case 1:
+                            return (
+                                <FormUserDetails
+                                    handleChange={handleChange}
+                                    handleStep={handleStep}
+                                    values={values}
+                                />
+                            );
+                        case 2:
+                            return (
+                                <LinkWallet
+                                    handleChange={handleChange}
+                                    handleStep={handleStep}
+                                    values={values}
+                                />
+                            );
+                        case 3:
+                            return <Success />;
+                        default:
+                            return null;
+                    }
+                })()}
             </div>
         </section>
     );
